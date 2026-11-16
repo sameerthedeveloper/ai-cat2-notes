@@ -16,7 +16,7 @@ export function Vids({ id }) {
   const v = y.v[cur];
   return (
     <div className="wg vids">
-      <h4>Neso Academy lessons</h4>
+      <h4>Video lessons</h4>
       <div className="vplay">
         {playing ? (
           <iframe
@@ -29,7 +29,7 @@ export function Vids({ id }) {
         ) : (
           <button className="vposter" type="button" aria-label={`Play ${V[v][0]}`} style={{ backgroundImage: `url(https://i.ytimg.com/vi/${v}/hqdefault.jpg)` }} onClick={() => setPlaying(true)}>
             <span className="vbtn">Play</span>
-            <span className="vcap">{V[v][0]}</span>
+            <span className="vcap">{V[v][0]}<span className="vcapch">{V[v][2]}</span></span>
           </button>
         )}
       </div>
@@ -37,7 +37,7 @@ export function Vids({ id }) {
         {y.v.map((vid, i) => (
           <li key={vid}>
             <button type="button" className={i === cur ? 'on' : ''} onClick={() => { setCur(i); setPlaying(false); }}>
-              <span className="vt">{V[vid][0]}</span>
+              <span className="vt">{V[vid][0]}<span className="vch">{V[vid][2]}</span></span>
               <span className="vd">{V[vid][1]} min</span>
             </button>
           </li>
@@ -57,7 +57,7 @@ export function Vids({ id }) {
 export function NoVideo() {
   return (
     <p className="novideo">
-      Neso Academy has no lesson on this topic. Its logic lessons are linked on the propositional logic, predicate logic, unification and inference pages; everything here is covered by the notes and tools on this page.
+      None of the channels used here (Mahesh Huddar, Neso Academy and a few others) has a lesson on this topic. The notes and tools on this page cover it in full.
     </p>
   );
 }

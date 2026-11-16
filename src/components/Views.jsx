@@ -63,7 +63,7 @@ export function Home() {
         </tbody>
       </table>
       <div className="tip"><b>Scoring.</b> Write the definition first, then the diagram, then the steps, then one worked example. For logic and planning problems every line of the derivation carries marks, so show the substitution, the clause used or the operator applied.</div>
-      <div className="tip"><b>Videos.</b> Neso Academy teaches the logic topics (propositional logic, predicate logic, inference and resolution), and those pages embed its lessons. It has no lessons on the planning topics, Wumpus world, semantic networks or frames.</div>
+      <div className="tip"><b>Videos.</b> Most topic pages embed video lessons. Mahesh Huddar is the main source (Wumpus world, logic, chaining, unification, resolution, means-ends analysis); Neso Academy teaches the logic as discrete maths; a few other channels fill the semantic network, frame and planning pages, and each video shows its channel. Conditional, reactive, continuous and multi-agent planning, re-planning, job-shop scheduling and temporal logic have no lesson, and those pages say so.</div>
       <div className="tip"><b>AI tutor.</b> Open "Ask tutor" (top right). It reads the topic you are on, can quiz you, write fresh problems and mark your answer. Sign in with a free Puter account on first use.</div>
       <div className="pager">
         <a className="btn" href="#all" style={btnLink}>All notes on one page and PDF</a>
@@ -148,7 +148,7 @@ export function AllView() {
       <h1>All notes, one page</h1>
       <p>Every topic, worked example and 2/5/13-mark answer in one scroll, then last year’s paper. Use Ctrl+F to find anything.</p>
       <div className="row">
-        <a className="btn pri" href={import.meta.env.BASE_URL + 'AI-CAT2-notes.pdf'} download="AI-CAT2-notes.pdf" style={btnLink}>Download PDF (offline)</a>
+        <a className="btn pri" href={'./AI-CAT2-notes.pdf'} download="AI-CAT2-notes.pdf" style={btnLink}>Download PDF (offline)</a>
         <button className="btn" onClick={() => print()}>Print or save as PDF</button>
       </div>
       <ol className="order">

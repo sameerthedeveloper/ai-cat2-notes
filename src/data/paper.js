@@ -48,7 +48,8 @@ export const PAPER = [
       {
         n: '6a', m: 16, kl: 'CO3 KL2',
         q: 'Describe the Wumpus World environment and explain how an agent can use logic to survive in it.',
-        a: `<div class="def"><b>Wumpus world.</b> A 4×4 cave of rooms. A monster (the wumpus) sits in one room, some rooms hold bottomless pits, and one room holds gold. The agent starts at [1,1], must grab the gold and climb out alive. It is the standard testbed for knowledge-based agents.</div>
+        a: `<div data-w="vids:q-6a"></div>
+<div class="def"><b>Wumpus world.</b> A 4×4 cave of rooms. A monster (the wumpus) sits in one room, some rooms hold bottomless pits, and one room holds gold. The agent starts at [1,1], must grab the gold and climb out alive. It is the standard testbed for knowledge-based agents.</div>
 <h4>PEAS description (4 marks)</h4>
 <table><tr><th>Part</th><th>Wumpus world</th></tr>
 <tr><td>Performance</td><td>+1000 for climbing out with the gold, −1000 for death, −1 per action, −10 for using the arrow</td></tr>
@@ -258,7 +259,8 @@ while plan not empty:
       {
         n: '8b', m: 8, kl: 'CO4 KL4', or: true,
         q: 'Justify the effectiveness of the vacuum world environment in demonstrating the functioning of intelligent agents using a smart home vacuum robot in Artificial Intelligence.',
-        a: `<div class="def"><b>Vacuum world.</b> The standard teaching environment for intelligent agents: squares A and B, each Clean or Dirty, and a vacuum agent that senses its location and local dirt and can move Left, Right or Suck. It has 2 × 2 × 2 = 8 states.</div>
+        a: `<div data-w="vids:q-8b"></div>
+<div class="def"><b>Vacuum world.</b> The standard teaching environment for intelligent agents: squares A and B, each Clean or Dirty, and a vacuum agent that senses its location and local dirt and can move Left, Right or Suck. It has 2 × 2 × 2 = 8 states.</div>
 <h4>PEAS of the smart home vacuum robot (2 marks)</h4>
 <table><tr><th>Part</th><th>Smart home vacuum</th></tr>
 <tr><td>Performance</td><td>+1 per clean square per time step; small penalty per move and for battery use</td></tr>

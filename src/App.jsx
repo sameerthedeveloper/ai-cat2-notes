@@ -3,6 +3,7 @@ import { MODS } from './data/content.js';
 import { T, store } from './lib.js';
 import Tutor, { useTutor } from './components/Tutor.jsx';
 import { AllView, Home, PaperView, Topic } from './components/Views.jsx';
+import CourseSwitch from './components/CourseSwitch.jsx';
 
 const routeOf = () => {
   const id = (location.hash || '#home').slice(1);
@@ -105,14 +106,15 @@ export default function App() {
             ))}
             {!sections.length && <p className="hint">No topic matches. Try another word.</p>}
           </nav>
-          <p className="hint">Gold dot = very high priority. Keys: j next, k previous, / search.</p>
+          <p className="hint">Red dot = very high priority. Keys: j next, k previous, / search.</p>
         </aside>
         <div className={'scrim' + (railOpen ? ' on' : '')} onClick={() => setRailOpen(false)} />
         <main>
           <div className="top">
             <button className="btn" id="menu" aria-label="Open topics" onClick={() => setRailOpen(true)}>Topics</button>
             <div className="crumb">{crumb}</div>
-            <button className="btn sm" onClick={() => setTheme(theme === 'night' ? 'day' : 'night')}>{theme === 'night' ? 'Day mode' : 'Night mode'}</button>
+            <CourseSwitch current="ai" />
+            <button className="btn sm" onClick={() => setTheme(theme === 'night' ? 'day' : 'night')}>{theme === 'night' ? 'Day paper' : 'Night paper'}</button>
             <button className="btn sm acct-top" onClick={tutor.acctClick}>{tutor.acct.label}</button>
             <button className="btn pri" onClick={() => tutor.setOpen(!tutor.open)}>Ask tutor</button>
           </div>

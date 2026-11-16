@@ -1,6 +1,11 @@
-# AI CAT-2 notes
+# CAT-2 notes: AI and Theory of Computation
 
-Artificial Intelligence Techniques (CSD 3102) revision notes, Modules III and IV. React + Vite.
+Two revision-notes sites in one repo, React + Vite, with the same paper-and-grid look.
+
+- `/` Artificial Intelligence Techniques (CSD 3102), Modules III and IV
+- `/toc/` Theory of Computation (CSD 3101), Modules III to V
+
+The **AI / TOC** dropdown in the top bar switches between them.
 
 ```bash
 npm install
@@ -12,7 +17,8 @@ npm run build    # production build to dist/
 
 - `src/data/content.js` – 30 topics with notes and 2/5/13-mark questions
 - `src/data/paper.js` – last year's CAT-2 paper (28 Oct 2025) with full answers
-- `src/data/videos.js` – Neso Academy lessons (IDs read from Neso's own playlists and checked against YouTube oEmbed)
+- `src/data/videos.js` – video lessons by topic, with channel per video
+- `toc/` – the Theory of Computation site (own `index.html`, `src/`, styles)
 - `src/engines.js` – pure logic: truth tables, entailment, unification, chaining, goal-stack planner, Wumpus inference, diagrams
 - `src/components/` – `Views` (pages), `widgets` (Wumpus world, solvers, videos), `Tutor` (Puter.js AI tutor), `Html` (authored HTML + widget placeholders)
 - `public/AI-CAT2-notes.pdf` – offline PDF of the notes
@@ -20,6 +26,6 @@ npm run build    # production build to dist/
 
 ## Videos
 
-Neso Academy has no artificial-intelligence course. Its Discrete Mathematics playlists (propositional logic, first-order logic, rules of inference, resolution) cover four topics here, so only those pages embed videos. The other pages say so instead of linking unrelated lessons.
+Mahesh Huddar is the main source (Wumpus world, logic, chaining, unification, resolution, means-ends analysis). Neso Academy covers the logic topics as discrete maths. A few other channels fill the semantic network, frame and planning pages, and each video shows its channel. Every video ID was checked against YouTube oEmbed. Ten planning topics (conditional, reactive, continuous and multi-agent planning, re-planning, execution monitoring, temporal logic, job-shop scheduling, knowledge-based planning, the simple planning agent) had no lesson on any channel, so those pages say so.
 
 The AI tutor loads Puter.js from a CDN and needs internet access and a free Puter account.
