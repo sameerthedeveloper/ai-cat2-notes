@@ -4,7 +4,7 @@ Three revision-notes sites in one repo, React + Vite, with the same paper-and-gr
 
 - `/` Artificial Intelligence Techniques (CSD 3102), Modules III and IV
 - `/toc/` Theory of Computation (CSD 3101), Modules III to V
-- `/nsc/` Network Security and Cryptography (CSD 3103), Modules III and IV: RSA, Diffie–Hellman, ECC, MAC, hashes, signatures, live calculators, Oct 2025 paper solved. Videos: Neso Academy (number theory) and 4G Silver Academy (Tamil).
+- `/nsc/` Network Security and Cryptography (CSD 3103), Modules III and IV: RSA, Diffie–Hellman, ECC, MAC, hashes, signatures, live calculators, Oct 2025 paper solved. Videos: Neso Academy (number theory), 4G Silver Academy (Tamil), and other channels for MAC, MD5 and SHA.
 
 The **AI / TOC / NSC** dropdown in the top bar switches between them.
 
