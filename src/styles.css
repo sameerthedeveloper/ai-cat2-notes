@@ -305,3 +305,9 @@ svg.net .held{font:600 11px var(--mono)}
 @media(max-width:640px){.acct-in{display:inline-block}.ai header b{flex:none}.ai header .acct-in{margin-left:auto}}
 @media print{.skip,.novideo{display:none!important}}
 .vnote span{margin-right:14px}
+
+/* site visit counter */
+.foot{max-width:820px;margin:-50px auto 0;padding:0 28px 40px 56px;position:relative}
+@media(max-width:700px){.foot{padding:0 16px 32px;margin-top:-60px}}
+.visits{margin:0;font:600 .85rem var(--head);color:var(--graphite)}
+.visits b{color:var(--ink);font-family:var(--mono)}

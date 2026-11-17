@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { MODS } from './data/content.js';
 import { T, store } from './lib.js';
+import Visits from './components/Visits.jsx';
 import Tutor, { useTutor } from './components/Tutor.jsx';
 import { AllView, Home, PaperView, Topic } from './components/Views.jsx';
 import CourseSwitch from './components/CourseSwitch.jsx';
@@ -121,6 +122,7 @@ export default function App() {
           <article className="sheet" id="view" key={cur}>
             {cur === 'paper' ? <PaperView /> : cur === 'all' ? <AllView /> : topic ? <Topic t={topic} done={done} onToggleDone={toggleDone} onPractice={tutor.practice} /> : <Home />}
           </article>
+          <footer className="foot"><Visits site="ai" /></footer>
         </main>
       </div>
       <Tutor tutor={tutor} />
